@@ -14,10 +14,10 @@ This project models an academic operations system designed to track student atte
 
 ---
 
-## 🏗️ Entity Relationship Diagram (ERD)
-The system connects core operational entities, including `STUDENT`, `LECTURER`, `SUBJECT`, `CLASSROOM`, `CLASS_HOUR`, `CLASS_DETAIL`, `STU_CLASS`, `ATTENDANCE`, and biometric verification references (`FINGERPRINT`).
+## Entity Relationship Diagram (ERD)
+The system connects 9 operational entities, including `STUDENT`, `LECTURER`, `SUBJECT`, `CLASSROOM`, `CLASS_HOUR`, `CLASS_DETAIL`, `STU_CLASS`, `ATTENDANCE`, and `FINGERPRINT`.
 
-![ERD Diagram](assets/erd.png)
+![ERD Diagram](ERD.png)
 
 ---
 
