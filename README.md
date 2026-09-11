@@ -21,7 +21,7 @@ The system connects 9 operational entities, including `STUDENT`, `LECTURER`, `SU
 
 ---
 
-## ⚙️ Technical Implementation
+## Technical Implementation
 
 ### 1. Data Integrity & Validation (DDL)
 Tables use strong integrity rules via regular expressions (`REGEXP_LIKE`) and primary/foreign keys:
@@ -34,22 +34,4 @@ Tables use strong integrity rules via regular expressions (`REGEXP_LIKE`) and pr
 Populated dummy transaction data across all tables using Oracle's `INSERT ALL` syntax.
 
 ### 3. Aggregation & Analytical Views
-Constructed consolidated SQL views using `INNER JOIN`, `UNION`, and `GROUP BY` to report summarized student attendance metrics (`StudentAttendanceCounts`):
-
-```sql
-CREATE VIEW StudentAttendanceCounts AS
-SELECT StudentID, StudentName, AttendanceStatus, COUNT(*) AS TotalCount
-FROM (
-    SELECT ST.studentID, ST.studentName, AE.attendancestatus
-    FROM STUDENT ST
-    INNER JOIN STU_CLASS SC ON ST.studentID = SC.studentID
-    INNER JOIN ATTENDANCE AE ON SC.stuClassID = AE.stuClassID
-    WHERE AE.attendancestatus = 'Present'
-    UNION
-    SELECT ST.studentID, ST.studentName, AE.attendancestatus
-    FROM STUDENT ST
-    INNER JOIN STU_CLASS SC ON ST.studentID = SC.studentID
-    INNER JOIN ATTENDANCE AE ON SC.stuClassID = AE.stuClassID
-    WHERE AE.attendancestatus = 'Absent'
-) CombinedAttendanceRecords
-GROUP BY StudentID, StudentName, AttendanceStatus;
+Constructed consolidated SQL views using `INNER JOIN`, `UNION`, and `GROUP BY` to report summarized student attendance metrics.
