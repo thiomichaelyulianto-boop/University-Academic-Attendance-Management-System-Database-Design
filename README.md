@@ -4,7 +4,7 @@ A relational database implementation for managing university courses, class sche
 
 ---
 
-## 📌 Project Overview
+## Project Overview
 This project models an academic operations system designed to track student attendance across different class sessions and subjects. It covers the full lifecycle of physical database implementation, from defining constraints to creating aggregated analytical views.
 
 ### Key Highlights
