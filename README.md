@@ -33,5 +33,5 @@ Constructed consolidated SQL views using `INNER JOIN`, `UNION`, and `GROUP BY` t
 * Aditya Naufal Erlangga
 * Arya Raka Pratama
 * Thio Michael Yulianto
-* Andhika Hafidz Albana
+* Andhika Hafizh Albana
 * Samuel Prima Damanik
