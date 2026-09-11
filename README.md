@@ -28,3 +28,10 @@ Populated dummy transaction data across all tables using Oracle's `INSERT ALL` s
 
 ### 3. Aggregation & Analytical Views
 Constructed consolidated SQL views using `INNER JOIN`, `UNION`, and `GROUP BY` to report summarized student attendance metrics.
+
+## Contributors
+* Aditya Naufal Erlangga
+* Arya Raka Pratama
+* Thio Michael Yulianto
+* Andhika Hafidz Albana
+* Samuel Prima Damanik
