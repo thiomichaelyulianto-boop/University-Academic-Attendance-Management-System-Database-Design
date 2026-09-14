@@ -18,7 +18,7 @@ The system connects 9 operational entities, including `STUDENT`, `LECTURER`, `SU
 ### Technical Implementation
 ### 1. Data Integrity & Validation (DDL)
 Tables use strong integrity rules via regular expressions (`REGEXP_LIKE`) and primary/foreign keys:
-* **Student ID format:** `^S[0-9]{4}$` (e.g., `S0001`)
+* **Student ID format:** `^S[0-9]{4}$`
 * **Lecturer ID format:** `^L[0-9]{4}$`
 * **Email & Phone constraints:** Strict verification ensuring valid phone prefixes (`^08`) and email domains (`@gmail.com$`).
 * **Foreign Key References:** Enforcing referential integrity across enrollment mappings (`STU_CLASS`) and dynamic attendance statuses.
