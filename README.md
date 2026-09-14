@@ -2,7 +2,7 @@
 
 A relational database implementation for managing university courses, class scheduling, student fingerprint records, and session attendance, developed using **Oracle APEX** (SQL).
 
-## Project Overview
+### Project Overview
 This project models an academic operations system designed to track student attendance across different class sessions and subjects. It covers the full lifecycle of physical database implementation, from defining constraints to creating aggregated analytical views.
 
 ### Key Highlights
@@ -10,12 +10,12 @@ This project models an academic operations system designed to track student atte
 * **Architecture:** Relational Database Management System (RDBMS)
 * **Focus Areas:** Data Definition (DDL), Data Integrity (REGEX constraints), Data Manipulation (DML), and Reporting Views.
 
-## Entity Relationship Diagram (ERD)
+### Entity Relationship Diagram (ERD)
 The system connects 9 operational entities, including `STUDENT`, `LECTURER`, `SUBJECT`, `CLASSROOM`, `CLASS_HOUR`, `CLASS_DETAIL`, `STU_CLASS`, `ATTENDANCE`, and `FINGERPRINT`.
 
 ![ERD Diagram](ERD.png)
 
-## Technical Implementation
+### Technical Implementation
 ### 1. Data Integrity & Validation (DDL)
 Tables use strong integrity rules via regular expressions (`REGEXP_LIKE`) and primary/foreign keys:
 * **Student ID format:** `^S[0-9]{4}$` (e.g., `S0001`)
@@ -29,7 +29,7 @@ Populated dummy transaction data across all tables using Oracle's `INSERT ALL` s
 ### 3. Aggregation & Analytical Views
 Constructed consolidated SQL views using `INNER JOIN`, `UNION`, and `GROUP BY` to report summarized student attendance metrics.
 
-## Contributors
+### Contributors
 * Aditya Naufal Erlangga
 * Arya Raka Pratama
 * Thio Michael Yulianto
